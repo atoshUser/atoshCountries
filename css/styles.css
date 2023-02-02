@@ -102,6 +102,7 @@
   background-color: var(---body-bg);
   color: var(---text-color);
   line-height: 16px;
+  transition: background-color 0.4s ease, color 0.4s ease,---logo-bg 0.4s ease;
  }
 
  .container{
@@ -178,10 +179,10 @@ flex-shrink: 0;
     align-items:center;
     color: var(---text-color);
 }
-.toggler-icon-img {
+.moon-icon-img {
    margin-right: 8px;
    flex-shrink: 0;
-   border:1px solid transparent;
+
 }
 .toggler-icon-heading {
 font-weight: 600;
