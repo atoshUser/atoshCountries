@@ -133,6 +133,7 @@ a{
     padding-bottom: 23px;
     background-color: var(---header-bg);
     box-shadow: 0px 2px 4px  rgba(0, 0, 0, 0.07);
+    transition: background-color 0.4s ease;
    background-color:var(---light-body);
 }
 
@@ -213,7 +214,7 @@ margin-bottom: 48px;
     display: flex;
     align-items:center;
     justify-content: space-between;
-
+margin-bottom: 48px;
 }
 .filter-search-input {
     max-width: 480px;
@@ -236,4 +237,92 @@ color:var(---text-color);
    max-width: 200px;
    background-color: var(---light-body);
    color: var(---text-color);
+}
+
+
+/* INDEX COUNTRIES  */
+
+.index-countries{
+
+}
+.container {
+}
+.index-countries-list {
+    display: flex;
+flex-wrap: wrap;
+margin: 0;
+padding: 0;
+list-style: none;
+margin-left: -75px;
+
+}
+.index-list-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 75px;
+    width: calc(25% - 75px);
+
+}
+
+.index-list-item:not(:last-child){
+    margin-bottom: 75px;
+}
+
+.wrapper-item {
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.4s ease;
+    background-color: var(---light-body);
+    border-radius: 5px;
+
+}
+
+.index-item-img {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-bottom: 24px;
+}
+.index-footer-heading {
+ margin: 0;
+ font-weight: 800;
+ font-size: 18px;
+ line-height: 26px;
+ margin-left: 24px;
+ margin-bottom: 16px;
+}
+
+.index-heading-link{
+    color:var(---text-color);
+    cursor: pointer;
+}
+
+.index-footer-wrapper {
+padding-left: 24px;
+
+}
+.index-footer-list {
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: column;
+  padding-bottom: 46px;
+
+}
+.index-footer-item {
+display: flex;
+margin-bottom: 8px;
+
+}
+.index-footer-term {
+    color:var(---text-color);
+    font-weight: 300;
+font-size: 14px;
+line-height: 16px;
+}
+.index-footer-term-definition {
+    margin: 0;
+    margin-left: 4px;
+    color:var(---text-color);
 }
