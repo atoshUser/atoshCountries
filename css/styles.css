@@ -5,6 +5,7 @@
     ---text-color:#111517;
     ---header-bg:#ffff;
     ---light-body:#fff;
+    ---transition-time:0.4s;
   }
 
 /* FONTS  */
@@ -95,7 +96,7 @@
   background-color: var(---body-bg);
   color: var(---text-color);
   line-height: 16px;
-  transition: background-color 0.4s ease, color 0.4s ease,---logo-bg 0.4s ease;
+  transition: background-color var(---transition-time) ease, color  var(---transition-time) ease,---logo-bg  var(---transition-time) ease;
  }
 
 
@@ -210,6 +211,10 @@ margin-top: 48px;
 margin-bottom: 48px;
 }
 
+.main-content-page{
+    margin-top: 80px;
+}
+
 .filters {
     display: flex;
     align-items:center;
@@ -284,6 +289,11 @@ margin-left: -75px;
     flex-shrink: 0;
     margin-bottom: 24px;
 }
+
+.flag-img-heading-link{
+    color:var(---text-color);
+}
+
 .index-footer-heading {
  margin: 0;
  font-weight: 800;
@@ -317,7 +327,7 @@ margin-bottom: 8px;
 }
 .index-footer-term {
     color:var(---text-color);
-    font-weight: 300;
+    font-weight: 600;
 font-size: 14px;
 line-height: 16px;
 }
@@ -325,4 +335,128 @@ line-height: 16px;
     margin: 0;
     margin-left: 4px;
     color:var(---text-color);
+    font-weight: 300;
+
+}
+
+
+
+/* PAGE STYLES  */
+
+.section-page {
+    display: flex;
+    flex-direction: column;
+}
+.return-back {
+
+margin-bottom: 80px;
+}
+
+.return-link{
+    display: inline-flex;
+  align-items:center;
+  background-color: var(---light-body);
+  color: var(---text-color);
+  cursor: pointer;
+  padding: 10px 40px;
+  border-radius: 6px;
+  box-shadow:0px, 0px
+rgba(0, 0, 0, 0.3);
+}
+.icon-left {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+.icon-text {
+font-weight: 300;
+font-size: 16px;
+
+line-height: 20px;
+}
+.section-page-inner {
+    display: flex;
+}
+.section-page-inner-img {
+    width: 500px;
+height: 400px;
+object-fit: cover;
+flex-shrink: 0;
+border-radius:8px;
+margin-right: 116px;
+}
+.page-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+
+}
+.page-info-wrapper-heading {
+    margin: 0;
+    align-items:center;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 23px;
+}
+.wrapper-info-box {
+    display: flex;
+    margin-bottom: 68px;
+}
+.wrapper-description-list {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+margin-right: 116px;
+}
+
+.wrapper-description-item{
+    display: flex;
+    margin-bottom: 5px;
+    align-items:center;
+}
+
+.description-term-page {
+    font-weight: 650;
+    font-size: 16px;
+    line-height: 32px;
+    color:var(---text-color);
+}
+.description-term {
+    margin:0;
+    margin-left: 5px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+}
+.description-list {
+    display: flex;
+    flex-direction: column;
+
+}
+.page-footer-wrapper {
+    display: flex;
+    align-items: center;
+}
+.footer-page-heading {
+margin: 0;
+font-weight: 650;
+font-size: 16px;
+line-height: 24px;
+margin-right: 15px;
+color: var(---text-color);
+}
+.page-footer-link {
+padding: 5px 28px;
+background-color: var(---light-body);
+box-shadow:0 0 4 1 #000000 10.49%;
+border-radius:5px;
+color: var(---text-color);
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+}
+
+.page-footer-link:not(:last-child){
+    margin-right: 10px;
 }
